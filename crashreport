@@ -1,0 +1,1726 @@
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               Glyphs 3 [8482]
+Path:                  /Applications/Glyphs 3.app/Contents/MacOS/Glyphs 3
+Identifier:            com.GeorgSeifert.Glyphs3
+Version:               3.2 (3233)
+Code Type:             ARM-64 (Native)
+Parent Process:        launchd [1]
+User ID:               501
+
+Date/Time:             2024-02-29 14:19:42.1433 -0500
+OS Version:            macOS 14.3.1 (23D60)
+Report Version:        12
+Anonymous UUID:        BC6B9198-DC48-5532-7268-E9F5B9268057
+
+Sleep/Wake UUID:       B5A5B890-9575-47B1-BCE0-A850091FBC0A
+
+Time Awake Since Boot: 21000 seconds
+Time Since Wake:       9994 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes:       KERN_PROTECTION_FAILURE at 0x000000016e93fff0
+Exception Codes:       0x0000000000000002, 0x000000016e93fff0
+
+Termination Reason:    Namespace SIGNAL, Code 11 Segmentation fault: 11
+Terminating Process:   exc handler [8482]
+
+VM Region Info: 0x16e93fff0 is in 0x16b13c000-0x16e940000;  bytes after start: 58736624  bytes before end: 15
+      REGION TYPE                    START - END         [ VSIZE] PRT/MAX SHRMOD  REGION DETAIL
+      mapped file                 160000000-166404000    [100.0M] r--/rwx SM=COW  ...t_id=8f129665
+      GAP OF 0x4d38000 BYTES
+--->  STACK GUARD                 16b13c000-16e940000    [ 56.0M] ---/rwx SM=NUL  ... for thread 0
+      Stack                       16e940000-16f13c000    [ 8176K] rw-/rwx SM=SHM  thread 0
+
+Thread 0 Crashed::  Dispatch queue: com.apple.main-thread
+0   CoreFoundation                	       0x18b0bfdb8 _CFStringGetCStringPtrInternal + 4
+1   CoreFoundation                	       0x18b0bcedc CFStringFindWithOptionsAndLocale + 308
+2   Foundation                    	       0x18c1e5524 -[NSString rangeOfString:options:range:locale:] + 268
+3   Foundation                    	       0x18c201448 -[NSString containsString:] + 56
+4   GlyphsKit                     	       0x1016d6858 -[NSAppearance(IsDarkMode) isDarkMode] + 40
+5   Glyphs 3                      	       0x100d7f464 0x100cc4000 + 767076
+6   AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+7   AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+8   AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+9   Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+10  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+11  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+12  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+13  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+14  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+15  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+16  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+17  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+18  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+19  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+20  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+21  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+22  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+23  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+24  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+25  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+26  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+27  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+28  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+29  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+30  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+31  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+32  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+33  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+34  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+35  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+36  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+37  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+38  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+39  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+40  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+41  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+42  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+43  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+44  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+45  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+46  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+47  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+48  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+49  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+50  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+51  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+52  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+53  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+54  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+55  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+56  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+57  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+58  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+59  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+60  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+61  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+62  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+63  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+64  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+65  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+66  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+67  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+68  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+69  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+70  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+71  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+72  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+73  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+74  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+75  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+76  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+77  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+78  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+79  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+80  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+81  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+82  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+83  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+84  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+85  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+86  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+87  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+88  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+89  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+90  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+91  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+92  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+93  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+94  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+95  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+96  AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+97  Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+98  AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+99  AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+100 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+101 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+102 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+103 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+104 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+105 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+106 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+107 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+108 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+109 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+110 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+111 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+112 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+113 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+114 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+115 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+116 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+117 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+118 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+119 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+120 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+121 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+122 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+123 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+124 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+125 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+126 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+127 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+128 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+129 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+130 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+131 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+132 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+133 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+134 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+135 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+136 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+137 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+138 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+139 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+140 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+141 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+142 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+143 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+144 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+145 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+146 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+147 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+148 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+149 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+150 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+151 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+152 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+153 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+154 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+155 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+156 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+157 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+158 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+159 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+160 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+161 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+162 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+163 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+164 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+165 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+166 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+167 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+168 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+169 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+170 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+171 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+172 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+173 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+174 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+175 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+176 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+177 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+178 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+179 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+180 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+181 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+182 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+183 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+184 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+185 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+186 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+187 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+188 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+189 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+190 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+191 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+192 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+193 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+194 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+195 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+196 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+197 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+198 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+199 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+200 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+201 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+202 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+203 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+204 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+205 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+206 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+207 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+208 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+209 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+210 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+211 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+212 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+213 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+214 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+215 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+216 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+217 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+218 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+219 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+220 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+221 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+222 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+223 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+224 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+225 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+226 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+227 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+228 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+229 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+230 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+231 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+232 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+233 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+234 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+235 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+236 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+237 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+238 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+239 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+240 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+241 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+242 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+243 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+244 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+245 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+246 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+247 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+248 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+249 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+250 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+251 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+252 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+253 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+254 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+255 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+256 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+257 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+258 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+259 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+260 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+261 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+262 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+263 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+264 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+265 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+266 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+267 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+268 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+269 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+270 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+271 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+272 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+273 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+274 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+275 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+276 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+277 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+278 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+279 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+280 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+281 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+282 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+283 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+284 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+285 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+286 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+287 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+288 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+289 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+290 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+291 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+292 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+293 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+294 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+295 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+296 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+297 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+298 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+299 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+300 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+301 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+302 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+303 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+304 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+305 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+306 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+307 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+308 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+309 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+310 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+311 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+312 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+313 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+314 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+315 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+316 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+317 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+318 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+319 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+320 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+321 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+322 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+323 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+324 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+325 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+326 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+327 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+328 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+329 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+330 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+331 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+332 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+333 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+334 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+335 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+336 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+337 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+338 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+339 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+340 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+341 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+342 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+343 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+344 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+345 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+346 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+347 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+348 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+349 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+350 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+351 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+352 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+353 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+354 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+355 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+356 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+357 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+358 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+359 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+360 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+361 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+362 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+363 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+364 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+365 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+366 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+367 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+368 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+369 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+370 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+371 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+372 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+373 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+374 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+375 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+376 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+377 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+378 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+379 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+380 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+381 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+382 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+383 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+384 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+385 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+386 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+387 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+388 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+389 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+390 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+391 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+392 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+393 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+394 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+395 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+396 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+397 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+398 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+399 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+400 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+401 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+402 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+403 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+404 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+405 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+406 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+407 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+408 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+409 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+410 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+411 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+412 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+413 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+414 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+415 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+416 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+417 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+418 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+419 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+420 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+421 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+422 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+423 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+424 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+425 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+426 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+427 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+428 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+429 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+430 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+431 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+432 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+433 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+434 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+435 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+436 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+437 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+438 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+439 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+440 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+441 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+442 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+443 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+444 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+445 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+446 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+447 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+448 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+449 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+450 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+451 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+452 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+453 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+454 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+455 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+456 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+457 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+458 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+459 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+460 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+461 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+462 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+463 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+464 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+465 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+466 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+467 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+468 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+469 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+470 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+471 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+472 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+473 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+474 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+475 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+476 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+477 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+478 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+479 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+480 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+481 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+482 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+483 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+484 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+485 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+486 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+487 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+488 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+489 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+490 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+491 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+492 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+493 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+494 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+495 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+496 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+497 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+498 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+499 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+500 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+501 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+502 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+503 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+504 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+505 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+506 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+507 AppKit                        	       0x18e8fcda8 +[NSAppearance _performWithCurrentAppearance:usingBlock:] + 72
+508 AppKit                        	       0x18e98fae4 -[NSView setAppearance:] + 144
+509 Glyphs 3                      	       0x100d7f6c8 0x100cc4000 + 767688
+510 AppKit                        	       0x18e929938 -[NSView _viewDidChangeAppearance:] + 320
+
+Thread 1:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+Thread 2:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+Thread 3:
+0   libsystem_kernel.dylib        	       0x18b011874 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18b023cf0 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x18b01a4b0 mach_msg_overwrite + 476
+3   libsystem_kernel.dylib        	       0x18b011bf8 mach_msg + 24
+4   Glyphs 3                      	       0x100d3201c 0x100cc4000 + 450588
+5   libsystem_pthread.dylib       	       0x18b052034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x18b04ce3c thread_start + 8
+
+Thread 4:: com.apple.CFSocket.private
+0   libsystem_kernel.dylib        	       0x18b01c9d4 __select + 8
+1   CoreFoundation                	       0x18b158db4 __CFSocketManager + 636
+2   libsystem_pthread.dylib       	       0x18b052034 _pthread_start + 136
+3   libsystem_pthread.dylib       	       0x18b04ce3c thread_start + 8
+
+Thread 5:: com.apple.NSEventThread
+0   libsystem_kernel.dylib        	       0x18b011874 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18b023cf0 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x18b01a4b0 mach_msg_overwrite + 476
+3   libsystem_kernel.dylib        	       0x18b011bf8 mach_msg + 24
+4   CoreFoundation                	       0x18b12fb84 __CFRunLoopServiceMachPort + 160
+5   CoreFoundation                	       0x18b12e44c __CFRunLoopRun + 1208
+6   CoreFoundation                	       0x18b12d93c CFRunLoopRunSpecific + 608
+7   AppKit                        	       0x18ea36160 _NSEventThread + 144
+8   libsystem_pthread.dylib       	       0x18b052034 _pthread_start + 136
+9   libsystem_pthread.dylib       	       0x18b04ce3c thread_start + 8
+
+Thread 6:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+Thread 7:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+Thread 8::  Dispatch queue: com.apple.root.utility-qos
+0   libsystem_kernel.dylib        	       0x18b01362c __ulock_wait + 8
+1   libdispatch.dylib             	       0x18aea1300 _dlock_wait + 56
+2   libdispatch.dylib             	       0x18aea10b4 _dispatch_thread_event_wait_slow + 56
+3   libdispatch.dylib             	       0x18aeaffb0 __DISPATCH_WAIT_FOR_QUEUE__ + 368
+4   libdispatch.dylib             	       0x18aeafb5c _dispatch_sync_f_slow + 148
+5   Glyphs 3                      	       0x100dc0d9c 0x100cc4000 + 1035676
+6   libdispatch.dylib             	       0x18ae9ecb8 _dispatch_call_block_and_release + 32
+7   libdispatch.dylib             	       0x18aea0910 _dispatch_client_callout + 20
+8   libdispatch.dylib             	       0x18aeb23cc _dispatch_root_queue_drain + 864
+9   libdispatch.dylib             	       0x18aeb2a04 _dispatch_worker_thread2 + 156
+10  libsystem_pthread.dylib       	       0x18b04e0d8 _pthread_wqthread + 228
+11  libsystem_pthread.dylib       	       0x18b04ce30 start_wqthread + 8
+
+Thread 9:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+Thread 10:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+Thread 11:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+Thread 12:
+0   libsystem_pthread.dylib       	       0x18b04ce28 start_wqthread + 0
+
+
+Thread 0 crashed with ARM Thread State (64-bit):
+    x0: 0x00000001e31e01f8   x1: 0x0000000000000600   x2: 0x0000000000000000   x3: 0x0000000000000001
+    x4: 0x0000000000000010   x5: 0x0000000000000000   x6: 0x000000016e9405c8   x7: 0x00000000000002d0
+    x8: 0x000000016e9401b0   x9: 0x0000000000000000  x10: 0x0000000000000000  x11: 0x000000000000007f
+   x12: 0x0000000000000036  x13: 0x0000000135126350  x14: 0x00000001e1940600  x15: 0x00000001e1940600
+   x16: 0x00000001e1940600  x17: 0x00000001e1940600  x18: 0x0000000000000000  x19: 0x0000000000000000
+   x20: 0x0000000000000001  x21: 0x00000001e1942000  x22: 0x0000000000000004  x23: 0x0000000000000018
+   x24: 0x0000000000000600  x25: 0x0000000101749250  x26: 0x0000000000000004  x27: 0x0000000000000018
+   x28: 0x0000000000000025   fp: 0x000000016e940590   lr: 0x1c1780018b0bcedc
+    sp: 0x000000016e940030   pc: 0x000000018b0bfdb8 cpsr: 0x00001000
+   far: 0x000000016e93fff0  esr: 0x92000047 (Data Abort) byte write Translation fault
+
+Binary Images:
+       0x130464000 -        0x1304cffff com.apple.AppleMetalOpenGLRenderer (1.0) <72c22333-9dbf-3856-99f1-716fc2b10726> /System/Library/Extensions/AppleMetalOpenGLRenderer.bundle/Contents/MacOS/AppleMetalOpenGLRenderer
+       0x126248000 -        0x126253fff com.apple.VisionKitCore.axbundle (1.0) <a9cfef11-dd2d-3c60-88f1-921898257a7d> /System/Library/Accessibility/BundlesBase/com.apple.VisionKitCore.axbundle/Versions/A/com.apple.VisionKitCore
+       0x1262e0000 -        0x1262e3fff com.apple.imageKit.axbundle (1.0) <dd864bcc-752e-3248-9b47-cfb5f7c14cbb> /System/Library/Accessibility/BundlesBase/com.apple.imageKit.axbundle/Versions/A/com.apple.imageKit
+       0x1262c0000 -        0x1262c3fff com.apple.securityinterface.axbundle (1.0) <3703653b-0115-3b71-b5e2-1830f021d0b7> /System/Library/Accessibility/BundlesBase/com.apple.securityinterface.axbundle/Versions/A/com.apple.securityinterface
+       0x1262a4000 -        0x1262a7fff com.apple.AnnotationKit.axbundle (1.0) <13ca3418-a7f1-3865-9cff-38830d0beaa9> /System/Library/Accessibility/BundlesBase/com.apple.AnnotationKit.axbundle/Versions/A/com.apple.AnnotationKit
+       0x12627c000 -        0x126283fff com.apple.AppKit.axbundle (1.0) <a3a9547f-661f-3d31-8332-e3a6420bff94> /System/Library/Accessibility/BundlesBase/com.apple.AppKit.axbundle/Versions/A/com.apple.AppKit
+       0x12619c000 -        0x12619ffff com.apple.TextInputUIMac.axbundle (1.0) <7a4ba625-9dff-382b-b8c3-7bb5e6552180> /System/Library/Accessibility/BundlesBase/com.apple.TextInputUIMac.axbundle/Versions/A/com.apple.TextInputUIMac
+       0x12612c000 -        0x12612ffff com.apple.icloud.drive.fileprovider.override (1.0) <65e23bdd-17f1-3764-b85f-e4c9abfcfde1> /System/Library/Frameworks/FileProvider.framework/OverrideBundles/iCloudDriveFileProviderOverride.bundle/Contents/MacOS/iCloudDriveFileProviderOverride
+       0x1261f4000 -        0x126213fff com.apple.findersync.fileprovideroverride.FinderSyncCollaborationFileProviderOverride (14.3) <aca2524a-0d34-344d-adf2-084c35ca6499> /System/Library/Frameworks/FileProvider.framework/OverrideBundles/FinderSyncCollaborationFileProviderOverride.bundle/Contents/MacOS/FinderSyncCollaborationFileProviderOverride
+       0x126154000 -        0x12615bfff com.apple.FileProviderOverride (1703.80.16) <00f87e11-2be8-3a69-af66-d5cab347d31b> /System/Library/Frameworks/FileProvider.framework/OverrideBundles/FileProviderOverride.bundle/Contents/MacOS/FileProviderOverride
+       0x104914000 -        0x104917fff com.glyphsapp.ZoomTool (3.2) <1dcff15c-f395-39f4-b15c-c684633846e0> /Applications/Glyphs 3.app/Contents/PlugIns/ZoomTool.glyphsTool/Contents/MacOS/ZoomTool
+       0x1048fc000 -        0x104903fff com.glyphsapp.VariableFont (3.2) <4e321833-83ec-3439-9e38-af5d872482f0> /Applications/Glyphs 3.app/Contents/PlugIns/VariableFont.glyphsFileFormat/Contents/MacOS/VariableFont
+       0x12376c000 -        0x123797fff com.glyphsapp.UFO (3.2) <ffa6e2f5-0b9c-32e7-87af-d0d183d70b59> /Applications/Glyphs 3.app/Contents/PlugIns/UFO.glyphsFileFormat/Contents/MacOS/UFO
+       0x123ca8000 -        0x123e53fff com.glyphsapp.TrueTypeInstructor (3.2) <f51a97e0-9f49-30a9-a732-0a6cc2110b95> /Applications/Glyphs 3.app/Contents/PlugIns/TrueTypeInstructor.glyphsTool/Contents/MacOS/TrueTypeInstructor
+       0x123580000 -        0x123587fff com.glyphsapp.TransformTool (3.2) <25df6acf-2f03-3fb3-81e5-b411b2ec1c0c> /Applications/Glyphs 3.app/Contents/PlugIns/TransformTool.glyphsTool/Contents/MacOS/TransformTool
+       0x1237f0000 -        0x1237fbfff com.glyphsapp.TransformPanel (3.2) <ce93bf00-66eb-3754-be8d-2a82ac9e12af> /Applications/Glyphs 3.app/Contents/PlugIns/TransformPanel.glyphsPalette/Contents/MacOS/TransformPanel
+       0x1237d4000 -        0x1237dffff com.glyphsapp.Transform (3.2) <5609f6aa-6737-35e0-a129-57bd05012cc5> /Applications/Glyphs 3.app/Contents/PlugIns/Transform.glyphsFilter/Contents/MacOS/Transform
+       0x1237b0000 -        0x1237c3fff com.glyphsapp.TextTool (3.2) <cf822e10-e697-3a26-83df-1fb7b2af229e> /Applications/Glyphs 3.app/Contents/PlugIns/TextTool.glyphsTool/Contents/MacOS/TextTool
+       0x123544000 -        0x12354bfff com.glyphsapp.StrokePlugin (3.2) <536ab2da-a8ed-30f1-a0f0-e417a7a57543> /Applications/Glyphs 3.app/Contents/PlugIns/StrokePlugin.glyphsPlugin/Contents/MacOS/StrokePlugin
+       0x12356c000 -        0x12356ffff com.glyphsapp.ShowClassMembers (3.2) <95bd9ec7-8964-318e-a065-2072af6cce67> /Applications/Glyphs 3.app/Contents/PlugIns/ShowClassMembers.glyphsReporter/Contents/MacOS/ShowClassMembers
+       0x1234d0000 -        0x1234e3fff com.glyphsapp.ShortCutPreferences (3.2) <60882055-1d2f-3308-93a2-cd3dd6f81b91> /Applications/Glyphs 3.app/Contents/PlugIns/ShortCutPreferences.glyphsPlugin/Contents/MacOS/ShortCutPreferences
+       0x12352c000 -        0x123533fff com.glyphsapp.SelectTool (3.2) <c21f7ba9-f16c-3874-a24e-6ae40460357b> /Applications/Glyphs 3.app/Contents/PlugIns/SelectTool.glyphsTool/Contents/MacOS/SelectTool
+       0x123518000 -        0x12351bfff com.glyphsapp.ScriptingManager (3.2) <fd19abcf-2cf1-3f79-99c5-600fd207c4cf> /Applications/Glyphs 3.app/Contents/PlugIns/ScriptingManager.glyphsPlugin/Contents/MacOS/ScriptingManager
+       0x123500000 -        0x123507fff com.glyphsapp.RoundedFont (3.2) <fe3a1ba2-4e38-37a7-ace5-57567a7f9724> /Applications/Glyphs 3.app/Contents/PlugIns/RoundedFont.glyphsFilter/Contents/MacOS/RoundedFont
+       0x123460000 -        0x123467fff com.glyphsapp.RoundCorner (3.2) <24e608c6-6e50-3613-96c9-df76511bc301> /Applications/Glyphs 3.app/Contents/PlugIns/RoundCorner.glyphsFilter/Contents/MacOS/RoundCorner
+       0x1234b8000 -        0x1234bffff com.glyphsapp.Roughenizer (3.2) <8f5ae2e0-934b-356f-8ba3-8d6bf9f9e35c> /Applications/Glyphs 3.app/Contents/PlugIns/Roughenizer.glyphsFilter/Contents/MacOS/Roughenizer
+       0x1234a0000 -        0x1234a7fff com.glyphsapp.PrimitivesTool (3.2) <45adbefd-3dd7-3c14-8d53-481615da535d> /Applications/Glyphs 3.app/Contents/PlugIns/PrimitivesTool.glyphsTool/Contents/MacOS/PrimitivesTool
+       0x123488000 -        0x12348ffff com.glyphsapp.PreviewText (3.2) <4afc2bf4-f859-3332-a3cc-b78fd8aaace7> /Applications/Glyphs 3.app/Contents/PlugIns/PreviewText.glyphsPlugin/Contents/MacOS/PreviewText
+       0x123410000 -        0x123427fff com.glyphsapp.PreviewServer (3.2) <726a8472-9f7e-3bbb-8338-3ff486c44e55> /Applications/Glyphs 3.app/Contents/PlugIns/PreviewServer.glyphsPlugin/Contents/MacOS/PreviewServer
+       0x123440000 -        0x123447fff com.glyphsapp.PreviewPanel (3.2) <ab7d9774-bdc4-35d2-af40-404a293c612e> /Applications/Glyphs 3.app/Contents/PlugIns/PreviewPanel.glyphsPlugin/Contents/MacOS/PreviewPanel
+       0x12336c000 -        0x123383fff com.glyphsapp.PluginManager (3.2) <b01fece1-229c-3493-8f63-216275b9e755> /Applications/Glyphs 3.app/Contents/PlugIns/PluginManager.glyphsPlugin/Contents/MacOS/PluginManager
+       0x1233fc000 -        0x1233fffff com.glyphsapp.PixelTool (3.2) <3eaf2e53-6d70-34ae-a426-d33544f3ba58> /Applications/Glyphs 3.app/Contents/PlugIns/PixelTool.glyphsTool/Contents/MacOS/PixelTool
+       0x1233e8000 -        0x1233ebfff com.glyphsapp.PixelPreview (3.2) <0ae5adda-f28a-308e-b6f7-a2cb0d5f5dfc> /Applications/Glyphs 3.app/Contents/PlugIns/PixelPreview.glyphsReporter/Contents/MacOS/PixelPreview
+       0x1233d4000 -        0x1233d7fff com.glyphsapp.PenTool (3.2) <acf62e4b-04fa-32fb-94e6-bd6f7fbe505d> /Applications/Glyphs 3.app/Contents/PlugIns/PenTool.glyphsTool/Contents/MacOS/PenTool
+       0x1233c0000 -        0x1233c3fff com.glyphsapp.OtherPathTools (3.2) <d8223fe5-facc-32de-8743-bf76be016f41> /Applications/Glyphs 3.app/Contents/PlugIns/OtherPathTools.glyphsTool/Contents/MacOS/OtherPathTools
+       0x123598000 -        0x123643fff com.glyphsapp.OTF (3.2) <5d493749-ea44-3d0e-8c25-69f6e76db894> /Applications/Glyphs 3.app/Contents/PlugIns/OTF.glyphsFileFormat/Contents/MacOS/OTF
+       0x1233a4000 -        0x1233affff com.glyphsapp.OffsetCurve (3.2) <7643765e-d40d-381c-b797-d3a7cdc59943> /Applications/Glyphs 3.app/Contents/PlugIns/OffsetCurve.glyphsFilter/Contents/MacOS/OffsetCurve
+       0x1232e0000 -        0x1232ebfff com.glyphsapp.Metrics (3.2) <f0c46d85-946a-3f01-b041-94280914456f> /Applications/Glyphs 3.app/Contents/PlugIns/Metrics.glyphsFileFormat/Contents/MacOS/Metrics
+       0x123310000 -        0x123317fff com.glyphsapp.MeasurementTool (3.2) <11d9746d-fbd3-36c2-9426-721097bfed32> /Applications/Glyphs 3.app/Contents/PlugIns/MeasurementTool.glyphsTool/Contents/MacOS/MeasurementTool
+       0x123350000 -        0x12335bfff com.glyphsapp.MasterCompatibility (3.2) <27b88fa2-e642-32f9-80d6-c370c479070d> /Applications/Glyphs 3.app/Contents/PlugIns/MasterCompatibility.glyphsReporter/Contents/MacOS/MasterCompatibility
+       0x12332c000 -        0x12333ffff com.glyphsapp.Layers (3.2) <920e3f74-1971-3ba6-812b-69e798b07bf2> /Applications/Glyphs 3.app/Contents/PlugIns/Layers.glyphsPalette/Contents/MacOS/Layers
+       0x1229dc000 -        0x1229e3fff com.glyphsapp.HatchOutline (3.2) <7644b04d-2227-384c-a170-fc5a33c878ff> /Applications/Glyphs 3.app/Contents/PlugIns/HatchOutline.glyphsFilter/Contents/MacOS/HatchOutline
+       0x1232cc000 -        0x1232cffff com.glyphsapp.HandTool (3.2) <7ff04b8c-d5b5-3426-bd48-4e1d13d74d2b> /Applications/Glyphs 3.app/Contents/PlugIns/HandTool.glyphsTool/Contents/MacOS/HandTool
+       0x1232b8000 -        0x1232bbfff com.glyphsapp.GlyphPanel (3.2) <ad4c581b-3a91-3655-8f9d-52fc9314811f> /Applications/Glyphs 3.app/Contents/PlugIns/GlyphPanel.glyphsPlugin/Contents/MacOS/GlyphPanel
+       0x1232a0000 -        0x1232a7fff com.glyphsapp.GlyphAsImage (3.2) <b5cadfd5-a4d0-3df6-88d3-3866d0ebf753> /Applications/Glyphs 3.app/Contents/PlugIns/GlyphAsImage.glyphsFilter/Contents/MacOS/GlyphAsImage
+       0x122b7c000 -        0x122b83fff com.glyphsapp.FitCurve (3.2) <39fbefbc-351f-3c84-800a-3048a28a8474> /Applications/Glyphs 3.app/Contents/PlugIns/FitCurve.glyphsPalette/Contents/MacOS/FitCurve
+       0x122b64000 -        0x122b6bfff com.glyphsapp.Extrude (3.2) <0d7eb80d-7db1-36b1-9646-095012ed4ad3> /Applications/Glyphs 3.app/Contents/PlugIns/Extrude.glyphsFilter/Contents/MacOS/Extrude
+       0x122b4c000 -        0x122b53fff com.glyphsapp.ElementOrder (3.2) <adb42299-807f-37c4-93cb-c71e176c39a0> /Applications/Glyphs 3.app/Contents/PlugIns/ElementOrder.glyphsFilter/Contents/MacOS/ElementOrder
+       0x122b34000 -        0x122b3bfff com.glyphsapp.DrawTool (3.2) <94bde76f-f7d0-38ed-89bb-2a79e68b1fca> /Applications/Glyphs 3.app/Contents/PlugIns/DrawTool.glyphsTool/Contents/MacOS/DrawTool
+       0x122b1c000 -        0x122b23fff com.glyphsapp.Dimensions (3.2) <dbec8bdf-967d-383e-9636-330567307ec8> /Applications/Glyphs 3.app/Contents/PlugIns/Dimensions.glyphsPalette/Contents/MacOS/Dimensions
+       0x122b00000 -        0x122b0bfff com.glyphsapp.CompareFonts (3.2) <adfdb1d8-d51f-35ec-8719-866838aa63ea> /Applications/Glyphs 3.app/Contents/PlugIns/CompareFonts.glyphsPlugin/Contents/MacOS/CompareFonts
+       0x122984000 -        0x12298bfff com.glyphsapp.CompareFamily (3.2) <5dc0ef3b-762a-3593-bb2b-ec54b6d149a4> /Applications/Glyphs 3.app/Contents/PlugIns/CompareFamily.glyphsPlugin/Contents/MacOS/CompareFamily
+       0x1229ac000 -        0x1229b3fff com.glyphsapp.AnnotationTool (3.2) <1d9c5171-4945-3436-a462-1d0dd59e3a89> /Applications/Glyphs 3.app/Contents/PlugIns/AnnotationTool.glyphsTool/Contents/MacOS/AnnotationTool
+       0x122ba4000 -        0x122f63fff org.python.python (3.11.5, (c) 2001-2023 Python Software Foundation.) <aed9a30c-0e9b-3559-bd60-24549ddfd370> /Library/Frameworks/Python.framework/Versions/3.11/Python
+       0x1014a8000 -        0x1014b3fff libobjc-trampolines.dylib (*) <39d1d8d0-6996-3bd4-8ce9-39512bb65c82> /usr/lib/libobjc-trampolines.dylib
+       0x100ff8000 -        0x101017fff com.apple.security.csparser (3.0) <01d0c1e0-2c8e-3ba5-82d1-e0e8eef9bd60> /System/Library/Frameworks/Security.framework/Versions/A/PlugIns/csparser.bundle/Contents/MacOS/csparser
+       0x1014c4000 -        0x101503fff org.sparkle-project.Sparkle (1.24.0 895-16910-g66a4942a0f) <5d9c35e7-8890-3dc5-aef7-34a252e1f727> /Applications/Glyphs 3.app/Contents/Frameworks/Sparkle.framework/Versions/A/Sparkle
+       0x101a18000 -        0x101b77fff org.libgit2.ObjectiveGit (1.0) <4e3f5764-cbfa-3292-a482-fed1126382eb> /Applications/Glyphs 3.app/Contents/Frameworks/ObjectiveGit.framework/Versions/A/ObjectiveGit
+       0x101428000 -        0x101437fff com.flyingmeat.JSTalk (*) <709559e8-25de-376c-94ce-c23e9a0a8e9a> /Applications/Glyphs 3.app/Contents/Frameworks/JSTalk.framework/Versions/A/JSTalk
+       0x1016d0000 -        0x10173ffff com.glyphsapp.GlyphsKit (3.2) <dac85ea8-35f8-3d9b-a002-08beb8ac554c> /Applications/Glyphs 3.app/Contents/Frameworks/GlyphsKit.framework/Versions/A/GlyphsKit
+       0x101544000 -        0x1015f3fff com.schriftgestaltung.GSFontTools (3.0) <1890e6a6-906a-30c2-8cc5-5e4080961cb9> /Applications/Glyphs 3.app/Contents/Frameworks/GSFontTools.framework/Versions/A/GSFontTools
+       0x102534000 -        0x1027f3fff com.glyphsapp.GlyphsCore (3.2) <a7c0e452-bae9-39a3-9ff2-7ed90b10d801> /Applications/Glyphs 3.app/Contents/Frameworks/GlyphsCore.framework/Versions/A/GlyphsCore
+       0x10179c000 -        0x1018fbfff com.grzegorzrolek.FEAKit (1.0) <b5386484-6ba8-363a-a878-cf7a1f93b399> /Applications/Glyphs 3.app/Contents/Frameworks/FEAKit.framework/Versions/A/FEAKit
+       0x100cc4000 -        0x100eeffff com.GeorgSeifert.Glyphs3 (3.2) <5beda9ef-eb43-3c79-9a6f-ba2c13e29e2e> /Applications/Glyphs 3.app/Contents/MacOS/Glyphs 3
+       0x18b0b2000 -        0x18b589fff com.apple.CoreFoundation (6.9) <6030a572-b731-3f46-b3a0-2598fbb98c9a> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+       0x18c1df000 -        0x18ce26fff com.apple.Foundation (6.9) <343d22b2-6c9a-3290-aa4d-18be70ab68ad> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+       0x18e8d3000 -        0x18fbfefff com.apple.AppKit (6.9) <873e5da0-bc01-399b-bf60-4066922d6a17> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+               0x0 - 0xffffffffffffffff ??? (*) <00000000-0000-0000-0000-000000000000> ???
+       0x18b04b000 -        0x18b057ff3 libsystem_pthread.dylib (*) <449bbad3-f7ef-371d-9a59-fd4ffa78289b> /usr/lib/system/libsystem_pthread.dylib
+       0x18b010000 -        0x18b04afff libsystem_kernel.dylib (*) <a7228b5d-53c7-3fe9-84e4-2a8c04dcf051> /usr/lib/system/libsystem_kernel.dylib
+       0x1fff53000 -        0x20030dfff com.apple.BiomeLibrary (*) <c3cf3965-05f6-3330-9dfd-5f12105b98cf> /System/Library/PrivateFrameworks/BiomeLibrary.framework/Versions/A/BiomeLibrary
+       0x18ae9d000 -        0x18aee3fff libdispatch.dylib (*) <5aa1649c-ef1d-39f7-a66c-4c5d2e53c474> /usr/lib/system/libdispatch.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=1.6G resident=0K(0%) swapped_out_or_unallocated=1.6G(100%)
+Writable regions: Total=1.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.6G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Accelerate framework               256K        2 
+Activity Tracing                   256K        1 
+CG image                           384K       17 
+ColorSync                          624K       29 
+CoreAnimation                     4288K      166 
+CoreGraphics                        48K        3 
+CoreUI image data                 4032K       29 
+Foundation                          48K        2 
+Image IO                           256K        1 
+Kernel Alloc Once                   32K        1 
+MALLOC                             1.6G       85 
+MALLOC guard page                  288K       18 
+SQLite page cache                  256K        2 
+STACK GUARD                       56.2M       13 
+Stack                             14.4M       13 
+VM_ALLOCATE                       2480K       22 
+__AUTH                            2430K      401 
+__AUTH_CONST                      30.9M      615 
+__CTF                               824        1 
+__DATA                            18.6M      664 
+__DATA_CONST                      32.7M      678 
+__DATA_DIRTY                      1955K      221 
+__FONT_DATA                          4K        1 
+__GLSLBUILTINS                    5174K        1 
+__INFO_FILTER                         8        1 
+__LINKEDIT                       899.4M       65 
+__OBJC_RO                         71.2M        1 
+__OBJC_RW                         2171K        1 
+__TEXT                           688.8M      696 
+dyld private memory                272K        2 
+libnetwork                        1664K       24 
+mapped file                      445.0M      816 
+shared memory                     1392K       15 
+===========                     =======  ======= 
+TOTAL                              3.9G     4607 
+
+
+
+-----------
+Full Report
+-----------
+
+{"app_name":"Glyphs 3","timestamp":"2024-02-29 14:19:42.00 -0500","app_version":"3.2","slice_uuid":"5beda9ef-eb43-3c79-9a6f-ba2c13e29e2e","build_version":"3233","platform":1,"bundleID":"com.GeorgSeifert.Glyphs3","share_with_app_devs":0,"is_first_party":0,"bug_type":"309","os_version":"macOS 14.3.1 (23D60)","roots_installed":0,"name":"Glyphs 3","incident_id":"08B5203A-B148-4F49-984C-7719D7E1A7DE"}
+{
+  "uptime" : 21000,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "Macmini9,1",
+  "coalitionID" : 11615,
+  "osVersion" : {
+    "train" : "macOS 14.3.1",
+    "build" : "23D60",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2024-02-29 14:19:42.1433 -0500",
+  "codeSigningMonitor" : 1,
+  "incident" : "08B5203A-B148-4F49-984C-7719D7E1A7DE",
+  "pid" : 8482,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2024-02-29 14:19:18.5459 -0500",
+  "procStartAbsTime" : 525936515837,
+  "procExitAbsTime" : 526502560472,
+  "procName" : "Glyphs 3",
+  "procPath" : "\/Applications\/Glyphs 3.app\/Contents\/MacOS\/Glyphs 3",
+  "bundleInfo" : {"CFBundleShortVersionString":"3.2","CFBundleVersion":"3233","CFBundleIdentifier":"com.GeorgSeifert.Glyphs3"},
+  "storeInfo" : {"deviceIdentifierForVendor":"326478F4-0D50-5269-A68D-B43DA50B2EA2","thirdParty":true},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.GeorgSeifert.Glyphs3",
+  "crashReporterKey" : "BC6B9198-DC48-5532-7268-E9F5B9268057",
+  "codeSigningID" : "com.GeorgSeifert.Glyphs3",
+  "codeSigningTeamID" : "X2L8375ZQ7",
+  "codeSigningFlags" : 570491649,
+  "codeSigningValidationCategory" : 6,
+  "codeSigningTrustLevel" : 4294967295,
+  "instructionByteStream" : {"beforePC":"QgAikQAAgNLhAxSq4ogHlMD5BzfgAxSqBPP\/l9RCRPnK\/\/8XfyMD1Q==","atPC":"+F+8qfZXAan0TwKp\/XsDqf3DAJH1AwOq9AMCqvYDAarzAwCqF0Qr8A=="},
+  "wakeTime" : 9994,
+  "sleepWakeUUID" : "B5A5B890-9575-47B1-BCE0-A850091FBC0A",
+  "sip" : "enabled",
+  "vmRegionInfo" : "0x16e93fff0 is in 0x16b13c000-0x16e940000;  bytes after start: 58736624  bytes before end: 15\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      mapped file                 160000000-166404000    [100.0M] r--\/rwx SM=COW  ...t_id=8f129665\n      GAP OF 0x4d38000 BYTES\n--->  STACK GUARD                 16b13c000-16e940000    [ 56.0M] ---\/rwx SM=NUL  ... for thread 0\n      Stack                       16e940000-16f13c000    [ 8176K] rw-\/rwx SM=SHM  thread 0",
+  "exception" : {"codes":"0x0000000000000002, 0x000000016e93fff0","rawCodes":[2,6150160368],"type":"EXC_BAD_ACCESS","signal":"SIGSEGV","subtype":"KERN_PROTECTION_FAILURE at 0x000000016e93fff0"},
+  "termination" : {"flags":0,"code":11,"namespace":"SIGNAL","indicator":"Segmentation fault: 11","byProc":"exc handler","byPid":8482},
+  "vmregioninfo" : "0x16e93fff0 is in 0x16b13c000-0x16e940000;  bytes after start: 58736624  bytes before end: 15\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      mapped file                 160000000-166404000    [100.0M] r--\/rwx SM=COW  ...t_id=8f129665\n      GAP OF 0x4d38000 BYTES\n--->  STACK GUARD                 16b13c000-16e940000    [ 56.0M] ---\/rwx SM=NUL  ... for thread 0\n      Stack                       16e940000-16f13c000    [ 8176K] rw-\/rwx SM=SHM  thread 0",
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":237510,"threadState":{"x":[{"value":8105361912},{"value":1536},{"value":0},{"value":1},{"value":16},{"value":0},{"value":6150161864},{"value":720},{"value":6150160816},{"value":0},{"value":0},{"value":127},{"value":54},{"value":5185364816},{"value":8079541760,"symbolLocation":0,"symbol":"__CFConstantStringClassReference"},{"value":8079541760,"symbolLocation":0,"symbol":"__CFConstantStringClassReference"},{"value":8079541760,"symbolLocation":0,"symbol":"__CFConstantStringClassReference"},{"value":8079541760,"symbolLocation":0,"symbol":"__CFConstantStringClassReference"},{"value":0},{"value":0},{"value":1},{"value":8079548416,"symbolLocation":16,"symbol":"OBJC_CLASS_$_NSConstantData"},{"value":4},{"value":24},{"value":1536},{"value":4319384144},{"value":4},{"value":24},{"value":37}],"flavor":"ARM_THREAD_STATE64","lr":{"value":2024227301642456796},"cpsr":{"value":4096},"fp":{"value":6150161808},"sp":{"value":6150160432},"esr":{"value":2449473607,"description":"(Data Abort) byte write Translation fault"},"pc":{"value":6627786168,"matchesCrashFrame":1},"far":{"value":6150160368}},"queue":"com.apple.main-thread","frames":[{"imageOffset":56760,"symbol":"_CFStringGetCStringPtrInternal","symbolLocation":4,"imageIndex":64},{"imageOffset":44764,"symbol":"CFStringFindWithOptionsAndLocale","symbolLocation":308,"imageIndex":64},{"imageOffset":25892,"symbol":"-[NSString rangeOfString:options:range:locale:]","symbolLocation":268,"imageIndex":65},{"imageOffset":140360,"symbol":"-[NSString containsString:]","symbolLocation":56,"imageIndex":65},{"imageOffset":26712,"symbol":"-[NSAppearance(IsDarkMode) isDarkMode]","symbolLocation":40,"imageIndex":59},{"imageOffset":767076,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66},{"imageOffset":171432,"symbol":"+[NSAppearance _performWithCurrentAppearance:usingBlock:]","symbolLocation":72,"imageIndex":66},{"imageOffset":772836,"symbol":"-[NSView setAppearance:]","symbolLocation":144,"imageIndex":66},{"imageOffset":767688,"imageIndex":63},{"imageOffset":354616,"symbol":"-[NSView _viewDidChangeAppearance:]","symbolLocation":320,"imageIndex":66}]},{"id":237548,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6160805888},{"value":14855},{"value":6160269312},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6160805888},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}},{"id":237552,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6163099648},{"value":13315},{"value":6162563072},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6163099648},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}},{"id":237686,"frames":[{"imageOffset":6260,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":69},{"imageOffset":81136,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":69},{"imageOffset":42160,"symbol":"mach_msg_overwrite","symbolLocation":476,"imageIndex":69},{"imageOffset":7160,"symbol":"mach_msg","symbolLocation":24,"imageIndex":69},{"imageOffset":450588,"imageIndex":63},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":68},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":68}],"threadState":{"x":[{"value":268451845},{"value":17179869190},{"value":2147488018},{"value":178133768727051},{"value":10329396346880},{"value":178133768601600},{"value":16384},{"value":0},{"value":18446744073709550527},{"value":41475},{"value":2405},{"value":1},{"value":41475},{"value":5114},{"value":0},{"value":0},{"value":18446744073709551569},{"value":8230976792},{"value":0},{"value":0},{"value":16384},{"value":178133768601600},{"value":10329396346880},{"value":178133768727051},{"value":4875223040},{"value":2147488018},{"value":17179869190},{"value":17179869190},{"value":6}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6627146992},"cpsr":{"value":4096},"fp":{"value":6354038320},"sp":{"value":6354038240},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627072116},"far":{"value":0}}},{"id":237690,"name":"com.apple.CFSocket.private","threadState":{"x":[{"value":4},{"value":0},{"value":105553147993840},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":6354612448},{"value":0},{"value":105554083421374},{"value":15},{"value":14},{"value":105553150567632},{"value":72057602117470817,"symbolLocation":72057594037927937,"symbol":"OBJC_CLASS_$___NSCFArray"},{"value":8079542880,"symbolLocation":0,"symbol":"OBJC_CLASS_$___NSCFArray"},{"value":93},{"value":8230963880},{"value":0},{"value":32},{"value":8079549368,"symbolLocation":0,"symbol":"__CFActiveSocketsLock"},{"value":1},{"value":4876915904},{"value":19},{"value":105553147993840},{"value":105553147993856},{"value":8147795296,"symbolLocation":0,"symbol":"__kCFNull"},{"value":0},{"value":8079548416,"symbolLocation":16,"symbol":"OBJC_CLASS_$_NSConstantData"}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6628412852},"cpsr":{"value":1610616832},"fp":{"value":6354612160},"sp":{"value":6354578384},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627117524},"far":{"value":0}},"frames":[{"imageOffset":51668,"symbol":"__select","symbolLocation":8,"imageIndex":69},{"imageOffset":683444,"symbol":"__CFSocketManager","symbolLocation":636,"imageIndex":64},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":68},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":68}]},{"id":237723,"name":"com.apple.NSEventThread","threadState":{"x":[{"value":268451845},{"value":21592279046},{"value":8589934592,"symbolLocation":28,"symbol":"__BMMLSEVirtualFeatureStoreFeatureFeatureValuetimeBucketFromString_block_invoke"},{"value":233109349990400},{"value":0},{"value":233109349990400},{"value":2},{"value":4294967295},{"value":18446744073709550527},{"value":54275},{"value":0},{"value":1},{"value":54275},{"value":19016},{"value":0},{"value":0},{"value":18446744073709551569},{"value":8230958472},{"value":0},{"value":4294967295},{"value":2},{"value":233109349990400},{"value":0},{"value":233109349990400},{"value":6356328552},{"value":8589934592,"symbolLocation":28,"symbol":"__BMMLSEVirtualFeatureStoreFeatureFeatureValuetimeBucketFromString_block_invoke"},{"value":21592279046},{"value":21592279046},{"value":4412409862}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6627146992},"cpsr":{"value":4096},"fp":{"value":6356328400},"sp":{"value":6356328320},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627072116},"far":{"value":0}},"frames":[{"imageOffset":6260,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":69},{"imageOffset":81136,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":69},{"imageOffset":42160,"symbol":"mach_msg_overwrite","symbolLocation":476,"imageIndex":69},{"imageOffset":7160,"symbol":"mach_msg","symbolLocation":24,"imageIndex":69},{"imageOffset":514948,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":64},{"imageOffset":509004,"symbol":"__CFRunLoopRun","symbolLocation":1208,"imageIndex":64},{"imageOffset":506172,"symbol":"CFRunLoopRunSpecific","symbolLocation":608,"imageIndex":64},{"imageOffset":1454432,"symbol":"_NSEventThread","symbolLocation":144,"imageIndex":66},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":68},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":68}]},{"id":237732,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6357479424},{"value":14087},{"value":6356942848},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6357479424},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}},{"id":238028,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6159085568},{"value":13063},{"value":6158548992},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6159085568},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}},{"id":238063,"threadState":{"x":[{"value":18446744073709551612},{"value":0},{"value":4294967295},{"value":0},{"value":8079448000,"symbolLocation":0,"symbol":"_dispatch_main_q"},{"value":18},{"value":0},{"value":0},{"value":0},{"value":105553121069696},{"value":2},{"value":16383},{"value":68719476736},{"value":9005068950962176},{"value":8079445432,"symbolLocation":0,"symbol":"OBJC_CLASS_$_OS_dispatch_queue_main"},{"value":8079445432,"symbolLocation":0,"symbol":"OBJC_CLASS_$_OS_dispatch_queue_main"},{"value":515},{"value":8145148912},{"value":0},{"value":4294967295},{"value":0},{"value":6159658256},{"value":16777217},{"value":1},{"value":4},{"value":0},{"value":276},{"value":0},{"value":6159659232}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6625563392},"cpsr":{"value":1073745920},"fp":{"value":6159658064},"sp":{"value":6159658032},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627079724},"far":{"value":0}},"queue":"com.apple.root.utility-qos","frames":[{"imageOffset":13868,"symbol":"__ulock_wait","symbolLocation":8,"imageIndex":69},{"imageOffset":17152,"symbol":"_dlock_wait","symbolLocation":56,"imageIndex":71},{"imageOffset":16564,"symbol":"_dispatch_thread_event_wait_slow","symbolLocation":56,"imageIndex":71},{"imageOffset":77744,"symbol":"__DISPATCH_WAIT_FOR_QUEUE__","symbolLocation":368,"imageIndex":71},{"imageOffset":76636,"symbol":"_dispatch_sync_f_slow","symbolLocation":148,"imageIndex":71},{"imageOffset":1035676,"imageIndex":63},{"imageOffset":7352,"symbol":"_dispatch_call_block_and_release","symbolLocation":32,"imageIndex":71},{"imageOffset":14608,"symbol":"_dispatch_client_callout","symbolLocation":20,"imageIndex":71},{"imageOffset":86988,"symbol":"_dispatch_root_queue_drain","symbolLocation":864,"imageIndex":71},{"imageOffset":88580,"symbol":"_dispatch_worker_thread2","symbolLocation":156,"imageIndex":71},{"imageOffset":12504,"symbol":"_pthread_wqthread","symbolLocation":228,"imageIndex":68},{"imageOffset":7728,"symbol":"start_wqthread","symbolLocation":8,"imageIndex":68}]},{"id":238064,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6160232448},{"value":17687},{"value":6159695872},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6160232448},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}},{"id":238065,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6161379328},{"value":57607},{"value":6160842752},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6161379328},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}},{"id":238066,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6161952768},{"value":10023},{"value":6161416192},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6161952768},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}},{"id":238086,"frames":[{"imageOffset":7720,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":68}],"threadState":{"x":[{"value":6162526208},{"value":0},{"value":6161989632},{"value":0},{"value":278532},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6162526208},"esr":{"value":0,"description":" Address size fault"},"pc":{"value":6627315240},"far":{"value":0}}}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 5104877568,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.AppleMetalOpenGLRenderer",
+    "size" : 442368,
+    "uuid" : "72c22333-9dbf-3856-99f1-716fc2b10726",
+    "path" : "\/System\/Library\/Extensions\/AppleMetalOpenGLRenderer.bundle\/Contents\/MacOS\/AppleMetalOpenGLRenderer",
+    "name" : "AppleMetalOpenGLRenderer",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4934893568,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.VisionKitCore.axbundle",
+    "size" : 49152,
+    "uuid" : "a9cfef11-dd2d-3c60-88f1-921898257a7d",
+    "path" : "\/System\/Library\/Accessibility\/BundlesBase\/com.apple.VisionKitCore.axbundle\/Versions\/A\/com.apple.VisionKitCore",
+    "name" : "com.apple.VisionKitCore",
+    "CFBundleVersion" : "258.6.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4935516160,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.imageKit.axbundle",
+    "size" : 16384,
+    "uuid" : "dd864bcc-752e-3248-9b47-cfb5f7c14cbb",
+    "path" : "\/System\/Library\/Accessibility\/BundlesBase\/com.apple.imageKit.axbundle\/Versions\/A\/com.apple.imageKit",
+    "name" : "com.apple.imageKit",
+    "CFBundleVersion" : "258.6.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4935385088,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.securityinterface.axbundle",
+    "size" : 16384,
+    "uuid" : "3703653b-0115-3b71-b5e2-1830f021d0b7",
+    "path" : "\/System\/Library\/Accessibility\/BundlesBase\/com.apple.securityinterface.axbundle\/Versions\/A\/com.apple.securityinterface",
+    "name" : "com.apple.securityinterface",
+    "CFBundleVersion" : "258.6.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4935270400,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.AnnotationKit.axbundle",
+    "size" : 16384,
+    "uuid" : "13ca3418-a7f1-3865-9cff-38830d0beaa9",
+    "path" : "\/System\/Library\/Accessibility\/BundlesBase\/com.apple.AnnotationKit.axbundle\/Versions\/A\/com.apple.AnnotationKit",
+    "name" : "com.apple.AnnotationKit",
+    "CFBundleVersion" : "258.6.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4935106560,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.AppKit.axbundle",
+    "size" : 32768,
+    "uuid" : "a3a9547f-661f-3d31-8332-e3a6420bff94",
+    "path" : "\/System\/Library\/Accessibility\/BundlesBase\/com.apple.AppKit.axbundle\/Versions\/A\/com.apple.AppKit",
+    "name" : "com.apple.AppKit",
+    "CFBundleVersion" : "258.6.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4934189056,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.TextInputUIMac.axbundle",
+    "size" : 16384,
+    "uuid" : "7a4ba625-9dff-382b-b8c3-7bb5e6552180",
+    "path" : "\/System\/Library\/Accessibility\/BundlesBase\/com.apple.TextInputUIMac.axbundle\/Versions\/A\/com.apple.TextInputUIMac",
+    "name" : "com.apple.TextInputUIMac",
+    "CFBundleVersion" : "258.6.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4933730304,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.icloud.drive.fileprovider.override",
+    "size" : 16384,
+    "uuid" : "65e23bdd-17f1-3764-b85f-e4c9abfcfde1",
+    "path" : "\/System\/Library\/Frameworks\/FileProvider.framework\/OverrideBundles\/iCloudDriveFileProviderOverride.bundle\/Contents\/MacOS\/iCloudDriveFileProviderOverride",
+    "name" : "iCloudDriveFileProviderOverride",
+    "CFBundleVersion" : "2461.80.8"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4934549504,
+    "CFBundleShortVersionString" : "14.3",
+    "CFBundleIdentifier" : "com.apple.findersync.fileprovideroverride.FinderSyncCollaborationFileProviderOverride",
+    "size" : 131072,
+    "uuid" : "aca2524a-0d34-344d-adf2-084c35ca6499",
+    "path" : "\/System\/Library\/Frameworks\/FileProvider.framework\/OverrideBundles\/FinderSyncCollaborationFileProviderOverride.bundle\/Contents\/MacOS\/FinderSyncCollaborationFileProviderOverride",
+    "name" : "FinderSyncCollaborationFileProviderOverride",
+    "CFBundleVersion" : "1630.3.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4933894144,
+    "CFBundleShortVersionString" : "1703.80.16",
+    "CFBundleIdentifier" : "com.apple.FileProviderOverride",
+    "size" : 32768,
+    "uuid" : "00f87e11-2be8-3a69-af66-d5cab347d31b",
+    "path" : "\/System\/Library\/Frameworks\/FileProvider.framework\/OverrideBundles\/FileProviderOverride.bundle\/Contents\/MacOS\/FileProviderOverride",
+    "name" : "FileProviderOverride",
+    "CFBundleVersion" : "1703.80.16"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4371595264,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.ZoomTool",
+    "size" : 16384,
+    "uuid" : "1dcff15c-f395-39f4-b15c-c684633846e0",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/ZoomTool.glyphsTool\/Contents\/MacOS\/ZoomTool",
+    "name" : "ZoomTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4371496960,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.VariableFont",
+    "size" : 32768,
+    "uuid" : "4e321833-83ec-3439-9e38-af5d872482f0",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/VariableFont.glyphsFileFormat\/Contents\/MacOS\/VariableFont",
+    "name" : "VariableFont",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4889952256,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.UFO",
+    "size" : 180224,
+    "uuid" : "ffa6e2f5-0b9c-32e7-87af-d0d183d70b59",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/UFO.glyphsFileFormat\/Contents\/MacOS\/UFO",
+    "name" : "UFO",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4895440896,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.TrueTypeInstructor",
+    "size" : 1753088,
+    "uuid" : "f51a97e0-9f49-30a9-a732-0a6cc2110b95",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/TrueTypeInstructor.glyphsTool\/Contents\/MacOS\/TrueTypeInstructor",
+    "name" : "TrueTypeInstructor",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887937024,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.TransformTool",
+    "size" : 32768,
+    "uuid" : "25df6acf-2f03-3fb3-81e5-b411b2ec1c0c",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/TransformTool.glyphsTool\/Contents\/MacOS\/TransformTool",
+    "name" : "TransformTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4890492928,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.TransformPanel",
+    "size" : 49152,
+    "uuid" : "ce93bf00-66eb-3754-be8d-2a82ac9e12af",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/TransformPanel.glyphsPalette\/Contents\/MacOS\/TransformPanel",
+    "name" : "TransformPanel",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4890378240,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.Transform",
+    "size" : 49152,
+    "uuid" : "5609f6aa-6737-35e0-a129-57bd05012cc5",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/Transform.glyphsFilter\/Contents\/MacOS\/Transform",
+    "name" : "Transform",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4890230784,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.TextTool",
+    "size" : 81920,
+    "uuid" : "cf822e10-e697-3a26-83df-1fb7b2af229e",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/TextTool.glyphsTool\/Contents\/MacOS\/TextTool",
+    "name" : "TextTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887691264,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.StrokePlugin",
+    "size" : 32768,
+    "uuid" : "536ab2da-a8ed-30f1-a0f0-e417a7a57543",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/StrokePlugin.glyphsPlugin\/Contents\/MacOS\/StrokePlugin",
+    "name" : "StrokePlugin",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887855104,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.ShowClassMembers",
+    "size" : 16384,
+    "uuid" : "95bd9ec7-8964-318e-a065-2072af6cce67",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/ShowClassMembers.glyphsReporter\/Contents\/MacOS\/ShowClassMembers",
+    "name" : "ShowClassMembers",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887216128,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.ShortCutPreferences",
+    "size" : 81920,
+    "uuid" : "60882055-1d2f-3308-93a2-cd3dd6f81b91",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/ShortCutPreferences.glyphsPlugin\/Contents\/MacOS\/ShortCutPreferences",
+    "name" : "ShortCutPreferences",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887592960,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.SelectTool",
+    "size" : 32768,
+    "uuid" : "c21f7ba9-f16c-3874-a24e-6ae40460357b",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/SelectTool.glyphsTool\/Contents\/MacOS\/SelectTool",
+    "name" : "SelectTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887511040,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.ScriptingManager",
+    "size" : 16384,
+    "uuid" : "fd19abcf-2cf1-3f79-99c5-600fd207c4cf",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/ScriptingManager.glyphsPlugin\/Contents\/MacOS\/ScriptingManager",
+    "name" : "ScriptingManager",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887412736,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.RoundedFont",
+    "size" : 32768,
+    "uuid" : "fe3a1ba2-4e38-37a7-ace5-57567a7f9724",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/RoundedFont.glyphsFilter\/Contents\/MacOS\/RoundedFont",
+    "name" : "RoundedFont",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886757376,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.RoundCorner",
+    "size" : 32768,
+    "uuid" : "24e608c6-6e50-3613-96c9-df76511bc301",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/RoundCorner.glyphsFilter\/Contents\/MacOS\/RoundCorner",
+    "name" : "RoundCorner",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887117824,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.Roughenizer",
+    "size" : 32768,
+    "uuid" : "8f5ae2e0-934b-356f-8ba3-8d6bf9f9e35c",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/Roughenizer.glyphsFilter\/Contents\/MacOS\/Roughenizer",
+    "name" : "Roughenizer",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4887019520,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PrimitivesTool",
+    "size" : 32768,
+    "uuid" : "45adbefd-3dd7-3c14-8d53-481615da535d",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PrimitivesTool.glyphsTool\/Contents\/MacOS\/PrimitivesTool",
+    "name" : "PrimitivesTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886921216,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PreviewText",
+    "size" : 32768,
+    "uuid" : "4afc2bf4-f859-3332-a3cc-b78fd8aaace7",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PreviewText.glyphsPlugin\/Contents\/MacOS\/PreviewText",
+    "name" : "PreviewText",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886429696,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PreviewServer",
+    "size" : 98304,
+    "uuid" : "726a8472-9f7e-3bbb-8338-3ff486c44e55",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PreviewServer.glyphsPlugin\/Contents\/MacOS\/PreviewServer",
+    "name" : "PreviewServer",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886626304,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PreviewPanel",
+    "size" : 32768,
+    "uuid" : "ab7d9774-bdc4-35d2-af40-404a293c612e",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PreviewPanel.glyphsPlugin\/Contents\/MacOS\/PreviewPanel",
+    "name" : "PreviewPanel",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885757952,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PluginManager",
+    "size" : 98304,
+    "uuid" : "b01fece1-229c-3493-8f63-216275b9e755",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PluginManager.glyphsPlugin\/Contents\/MacOS\/PluginManager",
+    "name" : "PluginManager",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886347776,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PixelTool",
+    "size" : 16384,
+    "uuid" : "3eaf2e53-6d70-34ae-a426-d33544f3ba58",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PixelTool.glyphsTool\/Contents\/MacOS\/PixelTool",
+    "name" : "PixelTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886265856,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PixelPreview",
+    "size" : 16384,
+    "uuid" : "0ae5adda-f28a-308e-b6f7-a2cb0d5f5dfc",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PixelPreview.glyphsReporter\/Contents\/MacOS\/PixelPreview",
+    "name" : "PixelPreview",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886183936,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.PenTool",
+    "size" : 16384,
+    "uuid" : "acf62e4b-04fa-32fb-94e6-bd6f7fbe505d",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/PenTool.glyphsTool\/Contents\/MacOS\/PenTool",
+    "name" : "PenTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4886102016,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.OtherPathTools",
+    "size" : 16384,
+    "uuid" : "d8223fe5-facc-32de-8743-bf76be016f41",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/OtherPathTools.glyphsTool\/Contents\/MacOS\/OtherPathTools",
+    "name" : "OtherPathTools",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4888035328,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.OTF",
+    "size" : 704512,
+    "uuid" : "5d493749-ea44-3d0e-8c25-69f6e76db894",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/OTF.glyphsFileFormat\/Contents\/MacOS\/OTF",
+    "name" : "OTF",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885987328,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.OffsetCurve",
+    "size" : 49152,
+    "uuid" : "7643765e-d40d-381c-b797-d3a7cdc59943",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/OffsetCurve.glyphsFilter\/Contents\/MacOS\/OffsetCurve",
+    "name" : "OffsetCurve",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885184512,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.Metrics",
+    "size" : 49152,
+    "uuid" : "f0c46d85-946a-3f01-b041-94280914456f",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/Metrics.glyphsFileFormat\/Contents\/MacOS\/Metrics",
+    "name" : "Metrics",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885381120,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.MeasurementTool",
+    "size" : 32768,
+    "uuid" : "11d9746d-fbd3-36c2-9426-721097bfed32",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/MeasurementTool.glyphsTool\/Contents\/MacOS\/MeasurementTool",
+    "name" : "MeasurementTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885643264,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.MasterCompatibility",
+    "size" : 49152,
+    "uuid" : "27b88fa2-e642-32f9-80d6-c370c479070d",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/MasterCompatibility.glyphsReporter\/Contents\/MacOS\/MasterCompatibility",
+    "name" : "MasterCompatibility",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885495808,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.Layers",
+    "size" : 81920,
+    "uuid" : "920e3f74-1971-3ba6-812b-69e798b07bf2",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/Layers.glyphsPalette\/Contents\/MacOS\/Layers",
+    "name" : "Layers",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4875730944,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.HatchOutline",
+    "size" : 32768,
+    "uuid" : "7644b04d-2227-384c-a170-fc5a33c878ff",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/HatchOutline.glyphsFilter\/Contents\/MacOS\/HatchOutline",
+    "name" : "HatchOutline",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885102592,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.HandTool",
+    "size" : 16384,
+    "uuid" : "7ff04b8c-d5b5-3426-bd48-4e1d13d74d2b",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/HandTool.glyphsTool\/Contents\/MacOS\/HandTool",
+    "name" : "HandTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4885020672,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.GlyphPanel",
+    "size" : 16384,
+    "uuid" : "ad4c581b-3a91-3655-8f9d-52fc9314811f",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/GlyphPanel.glyphsPlugin\/Contents\/MacOS\/GlyphPanel",
+    "name" : "GlyphPanel",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4884922368,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.GlyphAsImage",
+    "size" : 32768,
+    "uuid" : "b5cadfd5-a4d0-3df6-88d3-3866d0ebf753",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/GlyphAsImage.glyphsFilter\/Contents\/MacOS\/GlyphAsImage",
+    "name" : "GlyphAsImage",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4877434880,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.FitCurve",
+    "size" : 32768,
+    "uuid" : "39fbefbc-351f-3c84-800a-3048a28a8474",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/FitCurve.glyphsPalette\/Contents\/MacOS\/FitCurve",
+    "name" : "FitCurve",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4877336576,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.Extrude",
+    "size" : 32768,
+    "uuid" : "0d7eb80d-7db1-36b1-9646-095012ed4ad3",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/Extrude.glyphsFilter\/Contents\/MacOS\/Extrude",
+    "name" : "Extrude",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4877238272,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.ElementOrder",
+    "size" : 32768,
+    "uuid" : "adb42299-807f-37c4-93cb-c71e176c39a0",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/ElementOrder.glyphsFilter\/Contents\/MacOS\/ElementOrder",
+    "name" : "ElementOrder",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4877139968,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.DrawTool",
+    "size" : 32768,
+    "uuid" : "94bde76f-f7d0-38ed-89bb-2a79e68b1fca",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/DrawTool.glyphsTool\/Contents\/MacOS\/DrawTool",
+    "name" : "DrawTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4877041664,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.Dimensions",
+    "size" : 32768,
+    "uuid" : "dbec8bdf-967d-383e-9636-330567307ec8",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/Dimensions.glyphsPalette\/Contents\/MacOS\/Dimensions",
+    "name" : "Dimensions",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4876926976,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.CompareFonts",
+    "size" : 49152,
+    "uuid" : "adfdb1d8-d51f-35ec-8719-866838aa63ea",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/CompareFonts.glyphsPlugin\/Contents\/MacOS\/CompareFonts",
+    "name" : "CompareFonts",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4875370496,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.CompareFamily",
+    "size" : 32768,
+    "uuid" : "5dc0ef3b-762a-3593-bb2b-ec54b6d149a4",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/CompareFamily.glyphsPlugin\/Contents\/MacOS\/CompareFamily",
+    "name" : "CompareFamily",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4875534336,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.AnnotationTool",
+    "size" : 32768,
+    "uuid" : "1d9c5171-4945-3436-a462-1d0dd59e3a89",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/PlugIns\/AnnotationTool.glyphsTool\/Contents\/MacOS\/AnnotationTool",
+    "name" : "AnnotationTool",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4877598720,
+    "CFBundleShortVersionString" : "3.11.5, (c) 2001-2023 Python Software Foundation.",
+    "CFBundleIdentifier" : "org.python.python",
+    "size" : 3932160,
+    "uuid" : "aed9a30c-0e9b-3559-bd60-24549ddfd370",
+    "path" : "\/Library\/Frameworks\/Python.framework\/Versions\/3.11\/Python",
+    "name" : "Python",
+    "CFBundleVersion" : "3.11.5"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4316626944,
+    "size" : 49152,
+    "uuid" : "39d1d8d0-6996-3bd4-8ce9-39512bb65c82",
+    "path" : "\/usr\/lib\/libobjc-trampolines.dylib",
+    "name" : "libobjc-trampolines.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4311711744,
+    "CFBundleShortVersionString" : "3.0",
+    "CFBundleIdentifier" : "com.apple.security.csparser",
+    "size" : 131072,
+    "uuid" : "01d0c1e0-2c8e-3ba5-82d1-e0e8eef9bd60",
+    "path" : "\/System\/Library\/Frameworks\/Security.framework\/Versions\/A\/PlugIns\/csparser.bundle\/Contents\/MacOS\/csparser",
+    "name" : "csparser",
+    "CFBundleVersion" : "61040.81.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4316741632,
+    "CFBundleShortVersionString" : "1.24.0 895-16910-g66a4942a0f",
+    "CFBundleIdentifier" : "org.sparkle-project.Sparkle",
+    "size" : 262144,
+    "uuid" : "5d9c35e7-8890-3dc5-aef7-34a252e1f727",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/Frameworks\/Sparkle.framework\/Versions\/A\/Sparkle",
+    "name" : "Sparkle",
+    "CFBundleVersion" : "1.24.0"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4322328576,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "org.libgit2.ObjectiveGit",
+    "size" : 1441792,
+    "uuid" : "4e3f5764-cbfa-3292-a482-fed1126382eb",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/Frameworks\/ObjectiveGit.framework\/Versions\/A\/ObjectiveGit",
+    "name" : "ObjectiveGit"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4316102656,
+    "CFBundleIdentifier" : "com.flyingmeat.JSTalk",
+    "size" : 65536,
+    "uuid" : "709559e8-25de-376c-94ce-c23e9a0a8e9a",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/Frameworks\/JSTalk.framework\/Versions\/A\/JSTalk",
+    "name" : "JSTalk",
+    "CFBundleVersion" : "1.0"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4318887936,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.GlyphsKit",
+    "size" : 458752,
+    "uuid" : "dac85ea8-35f8-3d9b-a002-08beb8ac554c",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/Frameworks\/GlyphsKit.framework\/Versions\/A\/GlyphsKit",
+    "name" : "GlyphsKit",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4317265920,
+    "CFBundleShortVersionString" : "3.0",
+    "CFBundleIdentifier" : "com.schriftgestaltung.GSFontTools",
+    "size" : 720896,
+    "uuid" : "1890e6a6-906a-30c2-8cc5-5e4080961cb9",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/Frameworks\/GSFontTools.framework\/Versions\/A\/GSFontTools",
+    "name" : "GSFontTools",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4333977600,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.glyphsapp.GlyphsCore",
+    "size" : 2883584,
+    "uuid" : "a7c0e452-bae9-39a3-9ff2-7ed90b10d801",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/Frameworks\/GlyphsCore.framework\/Versions\/A\/GlyphsCore",
+    "name" : "GlyphsCore",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4319723520,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.grzegorzrolek.FEAKit",
+    "size" : 1441792,
+    "uuid" : "b5386484-6ba8-363a-a878-cf7a1f93b399",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/Frameworks\/FEAKit.framework\/Versions\/A\/FEAKit",
+    "name" : "FEAKit",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4308353024,
+    "CFBundleShortVersionString" : "3.2",
+    "CFBundleIdentifier" : "com.GeorgSeifert.Glyphs3",
+    "size" : 2277376,
+    "uuid" : "5beda9ef-eb43-3c79-9a6f-ba2c13e29e2e",
+    "path" : "\/Applications\/Glyphs 3.app\/Contents\/MacOS\/Glyphs 3",
+    "name" : "Glyphs 3",
+    "CFBundleVersion" : "3233"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6627729408,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 5079040,
+    "uuid" : "6030a572-b731-3f46-b3a0-2598fbb98c9a",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "2303"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6645739520,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.Foundation",
+    "size" : 12877824,
+    "uuid" : "343d22b2-6c9a-3290-aa4d-18be70ab68ad",
+    "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Versions\/C\/Foundation",
+    "name" : "Foundation",
+    "CFBundleVersion" : "2303"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6686584832,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.AppKit",
+    "size" : 20103168,
+    "uuid" : "873e5da0-bc01-399b-bf60-4066922d6a17",
+    "path" : "\/System\/Library\/Frameworks\/AppKit.framework\/Versions\/C\/AppKit",
+    "name" : "AppKit",
+    "CFBundleVersion" : "2487.40.107"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6627307520,
+    "size" : 53236,
+    "uuid" : "449bbad3-f7ef-371d-9a59-fd4ffa78289b",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6627065856,
+    "size" : 241664,
+    "uuid" : "a7228b5d-53c7-3fe9-84e4-2a8c04dcf051",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 8589225984,
+    "CFBundleIdentifier" : "com.apple.BiomeLibrary",
+    "size" : 3911680,
+    "uuid" : "c3cf3965-05f6-3330-9dfd-5f12105b98cf",
+    "path" : "\/System\/Library\/PrivateFrameworks\/BiomeLibrary.framework\/Versions\/A\/BiomeLibrary",
+    "name" : "BiomeLibrary",
+    "CFBundleVersion" : "55.4.3"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6625546240,
+    "size" : 290816,
+    "uuid" : "5aa1649c-ef1d-39f7-a66c-4c5d2e53c474",
+    "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+    "name" : "libdispatch.dylib"
+  }
+],
+  "sharedCache" : {
+  "base" : 6622887936,
+  "size" : 4065345536,
+  "uuid" : "c32b200e-cf99-3583-bc9f-b7fb11382e8f"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=1.6G resident=0K(0%) swapped_out_or_unallocated=1.6G(100%)\nWritable regions: Total=1.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.6G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nAccelerate framework               256K        2 \nActivity Tracing                   256K        1 \nCG image                           384K       17 \nColorSync                          624K       29 \nCoreAnimation                     4288K      166 \nCoreGraphics                        48K        3 \nCoreUI image data                 4032K       29 \nFoundation                          48K        2 \nImage IO                           256K        1 \nKernel Alloc Once                   32K        1 \nMALLOC                             1.6G       85 \nMALLOC guard page                  288K       18 \nSQLite page cache                  256K        2 \nSTACK GUARD                       56.2M       13 \nStack                             14.4M       13 \nVM_ALLOCATE                       2480K       22 \n__AUTH                            2430K      401 \n__AUTH_CONST                      30.9M      615 \n__CTF                               824        1 \n__DATA                            18.6M      664 \n__DATA_CONST                      32.7M      678 \n__DATA_DIRTY                      1955K      221 \n__FONT_DATA                          4K        1 \n__GLSLBUILTINS                    5174K        1 \n__INFO_FILTER                         8        1 \n__LINKEDIT                       899.4M       65 \n__OBJC_RO                         71.2M        1 \n__OBJC_RW                         2171K        1 \n__TEXT                           688.8M      696 \ndyld private memory                272K        2 \nlibnetwork                        1664K       24 \nmapped file                      445.0M      816 \nshared memory                     1392K       15 \n===========                     =======  ======= \nTOTAL                              3.9G     4607 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "logWritingSignature" : "07b20cb36d5e8bda082adb7c60681714d535dc0f",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "5ffde50ce2aacd000d47a95f",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000364
+    },
+    {
+      "rolloutId" : "632e3f9c01482c74ed76392d",
+      "factorPackIds" : {
+        "SIRI_TEXT_TO_SPEECH" : "65c56d96ac449c5a91b3181b"
+      },
+      "deploymentId" : 240000405
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}
+
+Model: Macmini9,1, BootROM 10151.81.1, proc 8:4:4 processors, 16 GB, SMC 
+Graphics: Apple M1, Apple M1, Built-In
+Display: PHL 272P7VU, 5120 x 2880 (5K/UHD+ - Ultra High Definition Plus), Main, MirrorOff, Online
+Display: BenQ RL2450H, 1920 x 1080 (1080p FHD - Full High Definition), MirrorOff, Online
+Memory Module: LPDDR4, Hynix
+AirPort: spairport_wireless_card_type_wifi (0x14E4, 0x4378), wl0: Aug 26 2023 17:55:53 version 18.20.439.0.7.8.163 FWID 01-f9b9247b
+AirPort: 
+Bluetooth: Version (null), 0 services, 0 devices, 0 incoming serial ports
+Network Service: Ethernet, Ethernet, en0
+Network Service: Wi-Fi, AirPort, en1
+USB Device: USB31Bus
+USB Device: 4-Port USB 3.0 Hub
+USB Device: USB 10/100/1000 LAN
+USB Device: 4-Port USB 2.0 Hub
+USB Device: USB31Bus
+USB Device: USB3.0 Hub
+USB Device: VLI Product String
+USB Device: USB3.0-CRW
+USB Device: USB3.0 Hub
+USB Device: USB2.0 Hub
+USB Device: MX Vertical Advanced Ergonomic Mouse
+USB Device: USB2.0 Hub
+USB Device: Controller
+USB Device: USB Billboard Device
+USB Device: USB Billboard Device
+USB Device: USB30Bus
+USB Device: USB Receiver
+Thunderbolt Bus: Mac mini, Apple Inc.
+Thunderbolt Bus: Mac mini, Apple Inc.
